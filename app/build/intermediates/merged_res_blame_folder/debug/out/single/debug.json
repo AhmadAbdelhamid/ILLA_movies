@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.illa_movies.app-main-80:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.illa_movies.app-main-80:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/drawable_ic_home_black_24dp.xml.flat",
+        "source": "com.example.illa_movies.app-main-80:/drawable/ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "com.example.illa_movies.app-main-80:/drawable/ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.illa_movies.app-main-80:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.illa_movies.app-main-80:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.illa_movies.app-main-80:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.illa_movies.app-main-80:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.example.illa_movies.app-main-80:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/layout_main_activity.xml.flat",
+        "source": "com.example.illa_movies.app-main-80:/layout/main_activity.xml"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.illa_movies.app-main-80:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.illa_movies.app-main-80:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.illa_movies.app-main-80:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.illa_movies.app-main-80:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.illa_movies.app-main-80:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "com.example.illa_movies.app-main-80:/mipmap-anydpi-v33/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/navigation_nav_graph.xml.flat",
+        "source": "com.example.illa_movies.app-main-80:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.illa_movies.app-main-80:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.illa_movies.app-main-80:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "com.example.illa_movies.app-main-80:/drawable/ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "com.example.illa_movies.app-merged_res-78:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.illa_movies.app-main-80:/mipmap-xxhdpi/ic_launcher_round.webp"
+    }
+]

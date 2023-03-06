@@ -1,0 +1,15 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1678145451265)
++++ b/.gitignore	(date 1678145451265)
+@@ -0,0 +1,4 @@
++# Project exclude paths
++/.gradle/
++/app/build/
++/app/build/intermediates/javac/debug/classes/
+\ No newline at end of file

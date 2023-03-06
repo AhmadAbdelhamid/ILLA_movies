@@ -1,0 +1,16 @@
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\ui\theme\Color.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\ui\theme\Theme.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\IllaApp.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\core\domain\repository\OmdbRepo.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\ui\home\HomeViewModel.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\ui\theme\Shape.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\core\di\RepositoriesBindingModule.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\ui\favorites\FavoritesViewModel.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\ui\favorites\FavoritesFragment.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\ui\home\HomeFragment.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\ui\theme\Type.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\core\di\AppModule.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\core\data_source\remote\OmdbService.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\MainActivity.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\core\di\NetworkModule.kt
+C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\java\com\example\illa_movies\core\data_source\remote\data\OmdbSearchResult.kt
