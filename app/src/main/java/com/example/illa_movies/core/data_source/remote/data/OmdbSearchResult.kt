@@ -8,12 +8,16 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class OmdbSearchResult(
     @SerializedName("Search")
-    val search: List<OmdbMovie>,
+    val movieList: List<OmdbMovie>? = null,
     @SerializedName("totalResults")
     val totalResults: Int = 0,
     @SerializedName("Response")
     val response: String, //True, False
-) : Parcelable
+    @SerializedName("Error")
+    val error: String? = null, //True, False
+) : Parcelable{
+    val isSuccessful: Boolean get() = response.equals("True",ignoreCase = true)
+}
 
 @Parcelize
 data class OmdbMovie(
@@ -25,12 +29,4 @@ data class OmdbMovie(
     val year: String,
     @SerializedName("Poster")
     val posterUrl: String
-) : Parcelable
-
-@Parcelize
-data class ErrorResponse(
-    @SerializedName("Error")
-    val error: String,
-    @SerializedName("Response")
-    val response: String
 ) : Parcelable

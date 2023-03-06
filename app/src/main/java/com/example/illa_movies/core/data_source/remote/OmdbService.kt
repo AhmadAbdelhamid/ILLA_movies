@@ -17,7 +17,7 @@ interface OmdbService {
         @Query("apikey") apiKey: String = OMDb_API_KEY,
         @Query("s") title: String,
         @Query("page") page: Int,
-        @Query("type") type: String,
-        @Query("y") year: String,
+        @Query("type") type: String="",
+        @Query("y") year: String="",
     ): OmdbSearchResult
 }
