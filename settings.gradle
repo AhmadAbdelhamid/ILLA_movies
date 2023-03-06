@@ -1,0 +1,2 @@
+rootProject.name = "ILLA_movies"
+include ':app'
