@@ -21,6 +21,7 @@ class OmdbPagingSource(
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, OmdbMovie> {
         return try {
+
             val page = params.key ?: STARTING_PAGE_INDEX
 
             val result = omdbService.searchMovies(
@@ -28,28 +29,25 @@ class OmdbPagingSource(
                 page = page,
             )
 
-            if (result.isSuccessful) {
-                val omdbMovies = result.movieList
-                val endOfPaginationReached = omdbMovies.isNullOrEmpty()
+            if (!result.isSuccessful)
+                return LoadResult.Error(Exception(result.error))
 
-                if (!endOfPaginationReached) {
+            val omdbMovies = result.movieList
 
-                    LoadResult.Page(
-                        data = omdbMovies ?: emptyList(),
-                        prevKey = if (page == 1) null else page - 1,
-                        nextKey = page + 1
-                    )
-                } else {
-                    LoadResult.Page(
-                        data = emptyList(),
-                        prevKey = null,
-                        nextKey = null
-                    )
-                }
+            val endOfPaginationReached = omdbMovies.isNullOrEmpty()
 
-            } else {
-                LoadResult.Error(Exception(result.error))
-            }
+            if (endOfPaginationReached)
+                return LoadResult.Page(
+                    data = emptyList(),
+                    prevKey = null,
+                    nextKey = null
+                )
+
+            LoadResult.Page(
+                data = omdbMovies ?: emptyList(),
+                prevKey = if (page == 1) null else page - 1,
+                nextKey = page + 1
+            )
 
         } catch (e: Exception) {
             LoadResult.Error(Exception("Sorry,something went bad!"))

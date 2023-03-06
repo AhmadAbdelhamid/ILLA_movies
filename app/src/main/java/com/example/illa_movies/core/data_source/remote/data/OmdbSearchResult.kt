@@ -14,7 +14,7 @@ data class OmdbSearchResult(
     @SerializedName("Response")
     val response: String, //True, False
     @SerializedName("Error")
-    val error: String? = null, //True, False
+    val error: String? = null,
 ) : Parcelable{
     val isSuccessful: Boolean get() = response.equals("True",ignoreCase = true)
 }
