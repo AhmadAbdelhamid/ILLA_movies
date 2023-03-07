@@ -1,7 +1,9 @@
 package com.example.illa_movies.ui.favorites
 
+import android.content.ClipData
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -16,7 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.example.illa_movies.core.data_source.remote.models.OmdbMovie
-import com.example.illa_movies.ui.ui_component.MovieItem
+import com.example.illa_movies.ui.common_ui_component.MovieItem
 
 
 @Composable
@@ -31,8 +33,9 @@ fun FavoriteMoviesScreen(
             EmptyText(
                 modifier = Modifier.align(Alignment.Center),
             )
-        else
+        else {
             FavoriteMoviesComponent(movies)
+        }
     }
 }
 
@@ -53,6 +56,12 @@ private fun FavoriteMoviesComponent(movies: List<OmdbMovie>) {
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+
+        item {
+            Text(
+                text = "Number of movies you have Liked (${movies.size}) ",
+            )
+        }
         items(
             items = movies,
         ) { movie ->

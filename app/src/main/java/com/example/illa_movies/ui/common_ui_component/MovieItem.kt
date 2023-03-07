@@ -1,4 +1,4 @@
-package com.example.illa_movies.ui.ui_component
+package com.example.illa_movies.ui.common_ui_component
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.*

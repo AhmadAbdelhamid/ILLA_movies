@@ -1,4 +1,4 @@
-package com.example.illa_movies.ui.ui_component
+package com.example.illa_movies.ui.common_ui_component
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding

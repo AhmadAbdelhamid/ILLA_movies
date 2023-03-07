@@ -14,6 +14,7 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
+                <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debugAndroidTest/R.jar</arg>
                 <arg>$MODULE_DIR$/../../../../repos/IMBd/.gradle/caches/transforms-3/154e0448576daab3f6d44fe14d17352b/transformed/junit-1.1.5-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../repos/IMBd/.gradle/caches/transforms-3/6d785572f36cb2d1253404a42ac6e7cd/transformed/espresso-core-3.5.1-api.jar</arg>
                 <arg>$MODULE_DIR$/../../../../repos/IMBd/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/logging-interceptor/5.0.0-alpha.7/c8116bcf5ce2a9a33c65bea29dea0cf680beb9e3/logging-interceptor-5.0.0-alpha.7.jar</arg>
