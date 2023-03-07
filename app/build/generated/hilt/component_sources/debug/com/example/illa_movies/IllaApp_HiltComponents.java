@@ -1,5 +1,11 @@
 package com.example.illa_movies;
 
+import com.example.illa_movies.core.di.AppModule;
+import com.example.illa_movies.core.di.NetworkModule;
+import com.example.illa_movies.core.di.RepositoriesBindingModule;
+import com.example.illa_movies.ui.favorites.FavoritesFragment_GeneratedInjector;
+import com.example.illa_movies.ui.home.HomeFragment_GeneratedInjector;
+import com.example.illa_movies.ui.home.HomeViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
 import dagger.Module;
@@ -43,10 +49,8 @@ import dagger.hilt.android.scopes.ViewScoped;
 import dagger.hilt.components.SingletonComponent;
 import dagger.hilt.internal.GeneratedComponent;
 import dagger.hilt.migration.DisableInstallInCheck;
-import javax.annotation.processing.Generated;
 import javax.inject.Singleton;
 
-@Generated("dagger.hilt.processor.internal.root.RootProcessor")
 public final class IllaApp_HiltComponents {
   private IllaApp_HiltComponents() {
   }
@@ -55,7 +59,6 @@ public final class IllaApp_HiltComponents {
       subcomponents = ServiceC.class
   )
   @DisableInstallInCheck
-  @Generated("dagger.hilt.processor.internal.root.RootProcessor")
   abstract interface ServiceCBuilderModule {
     @Binds
     ServiceComponentBuilder bind(ServiceC.Builder builder);
@@ -65,7 +68,6 @@ public final class IllaApp_HiltComponents {
       subcomponents = ActivityRetainedC.class
   )
   @DisableInstallInCheck
-  @Generated("dagger.hilt.processor.internal.root.RootProcessor")
   abstract interface ActivityRetainedCBuilderModule {
     @Binds
     ActivityRetainedComponentBuilder bind(ActivityRetainedC.Builder builder);
@@ -75,7 +77,6 @@ public final class IllaApp_HiltComponents {
       subcomponents = ActivityC.class
   )
   @DisableInstallInCheck
-  @Generated("dagger.hilt.processor.internal.root.RootProcessor")
   abstract interface ActivityCBuilderModule {
     @Binds
     ActivityComponentBuilder bind(ActivityC.Builder builder);
@@ -85,7 +86,6 @@ public final class IllaApp_HiltComponents {
       subcomponents = ViewModelC.class
   )
   @DisableInstallInCheck
-  @Generated("dagger.hilt.processor.internal.root.RootProcessor")
   abstract interface ViewModelCBuilderModule {
     @Binds
     ViewModelComponentBuilder bind(ViewModelC.Builder builder);
@@ -95,7 +95,6 @@ public final class IllaApp_HiltComponents {
       subcomponents = ViewC.class
   )
   @DisableInstallInCheck
-  @Generated("dagger.hilt.processor.internal.root.RootProcessor")
   abstract interface ViewCBuilderModule {
     @Binds
     ViewComponentBuilder bind(ViewC.Builder builder);
@@ -105,7 +104,6 @@ public final class IllaApp_HiltComponents {
       subcomponents = FragmentC.class
   )
   @DisableInstallInCheck
-  @Generated("dagger.hilt.processor.internal.root.RootProcessor")
   abstract interface FragmentCBuilderModule {
     @Binds
     FragmentComponentBuilder bind(FragmentC.Builder builder);
@@ -115,7 +113,6 @@ public final class IllaApp_HiltComponents {
       subcomponents = ViewWithFragmentC.class
   )
   @DisableInstallInCheck
-  @Generated("dagger.hilt.processor.internal.root.RootProcessor")
   abstract interface ViewWithFragmentCBuilderModule {
     @Binds
     ViewWithFragmentComponentBuilder bind(ViewWithFragmentC.Builder builder);
@@ -123,10 +120,13 @@ public final class IllaApp_HiltComponents {
 
   @Component(
       modules = {
+          AppModule.class,
           ApplicationContextModule.class,
           HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule.class,
           ActivityRetainedCBuilderModule.class,
-          ServiceCBuilderModule.class
+          ServiceCBuilderModule.class,
+          NetworkModule.class,
+          RepositoriesBindingModule.class
       }
   )
   @Singleton
@@ -150,6 +150,7 @@ public final class IllaApp_HiltComponents {
   @Subcomponent(
       modules = {
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
+          HomeViewModel_HiltModules.KeyModule.class,
           ActivityCBuilderModule.class,
           ViewModelCBuilderModule.class
       }
@@ -186,7 +187,10 @@ public final class IllaApp_HiltComponents {
   }
 
   @Subcomponent(
-      modules = HiltWrapper_HiltViewModelFactory_ViewModelModule.class
+      modules = {
+          HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
+          HomeViewModel_HiltModules.BindsModule.class
+      }
   )
   @ViewModelScoped
   public abstract static class ViewModelC implements ViewModelComponent,
@@ -210,7 +214,9 @@ public final class IllaApp_HiltComponents {
       modules = ViewWithFragmentCBuilderModule.class
   )
   @FragmentScoped
-  public abstract static class FragmentC implements FragmentComponent,
+  public abstract static class FragmentC implements FavoritesFragment_GeneratedInjector,
+      HomeFragment_GeneratedInjector,
+      FragmentComponent,
       DefaultViewModelFactories.FragmentEntryPoint,
       ViewComponentManager.ViewWithFragmentComponentBuilderEntryPoint,
       GeneratedComponent {

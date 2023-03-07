@@ -18,15 +18,15 @@
 12-->C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\AndroidManifest.xml:6:22-76
 13
 14    <permission
-14-->[androidx.core:core:1.10.0-beta01] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\bdc9601357a553d1bd5bafee4904d8dc\transformed\core-1.10.0-beta01\AndroidManifest.xml:22:5-24:47
+14-->[androidx.core:core:1.9.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\73ebadcf97d1b9a698c0f6c85e961c19\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 15        android:name="com.example.illa_movies.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-15-->[androidx.core:core:1.10.0-beta01] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\bdc9601357a553d1bd5bafee4904d8dc\transformed\core-1.10.0-beta01\AndroidManifest.xml:23:9-81
+15-->[androidx.core:core:1.9.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\73ebadcf97d1b9a698c0f6c85e961c19\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 16        android:protectionLevel="signature" />
-16-->[androidx.core:core:1.10.0-beta01] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\bdc9601357a553d1bd5bafee4904d8dc\transformed\core-1.10.0-beta01\AndroidManifest.xml:24:9-44
+16-->[androidx.core:core:1.9.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\73ebadcf97d1b9a698c0f6c85e961c19\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 17
 18    <uses-permission android:name="com.example.illa_movies.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-18-->[androidx.core:core:1.10.0-beta01] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\bdc9601357a553d1bd5bafee4904d8dc\transformed\core-1.10.0-beta01\AndroidManifest.xml:26:5-97
-18-->[androidx.core:core:1.10.0-beta01] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\bdc9601357a553d1bd5bafee4904d8dc\transformed\core-1.10.0-beta01\AndroidManifest.xml:26:22-94
+18-->[androidx.core:core:1.9.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\73ebadcf97d1b9a698c0f6c85e961c19\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.9.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\73ebadcf97d1b9a698c0f6c85e961c19\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 19
 20    <application
 20-->C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\AndroidManifest.xml:8:5-27:19
@@ -35,7 +35,7 @@
 22        android:allowBackup="true"
 22-->C:\Users\ahmad\Projects\ILLA_task\task\app\src\main\AndroidManifest.xml:10:9-35
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-23-->[androidx.core:core:1.10.0-beta01] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\bdc9601357a553d1bd5bafee4904d8dc\transformed\core-1.10.0-beta01\AndroidManifest.xml:28:18-86
+23-->[androidx.core:core:1.9.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\73ebadcf97d1b9a698c0f6c85e961c19\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:icon="@mipmap/ic_launcher"
@@ -69,85 +69,85 @@
 40            </intent-filter>
 41        </activity>
 42        <activity
-42-->[androidx.compose.ui:ui-tooling:1.3.3] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\c4d7e09d5bb985347d15b4cdab83b945\transformed\ui-tooling-1.3.3\AndroidManifest.xml:23:9-25:39
+42-->[androidx.compose.ui:ui-tooling:1.3.3] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\b13cba59aa8758628af0b4d84e3e6165\transformed\ui-tooling-1.3.3\AndroidManifest.xml:23:9-25:39
 43            android:name="androidx.compose.ui.tooling.PreviewActivity"
-43-->[androidx.compose.ui:ui-tooling:1.3.3] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\c4d7e09d5bb985347d15b4cdab83b945\transformed\ui-tooling-1.3.3\AndroidManifest.xml:24:13-71
+43-->[androidx.compose.ui:ui-tooling:1.3.3] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\b13cba59aa8758628af0b4d84e3e6165\transformed\ui-tooling-1.3.3\AndroidManifest.xml:24:13-71
 44            android:exported="true" />
-44-->[androidx.compose.ui:ui-tooling:1.3.3] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\c4d7e09d5bb985347d15b4cdab83b945\transformed\ui-tooling-1.3.3\AndroidManifest.xml:25:13-36
+44-->[androidx.compose.ui:ui-tooling:1.3.3] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\b13cba59aa8758628af0b4d84e3e6165\transformed\ui-tooling-1.3.3\AndroidManifest.xml:25:13-36
 45
 46        <uses-library
-46-->[androidx.window:window:1.0.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\841777df7dbcfaf21f69c79943dfa2d5\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+46-->[androidx.window:window:1.0.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\a553aa9fa572fd7fb247f21670544430\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
 47            android:name="androidx.window.extensions"
-47-->[androidx.window:window:1.0.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\841777df7dbcfaf21f69c79943dfa2d5\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+47-->[androidx.window:window:1.0.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\a553aa9fa572fd7fb247f21670544430\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
 48            android:required="false" />
-48-->[androidx.window:window:1.0.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\841777df7dbcfaf21f69c79943dfa2d5\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+48-->[androidx.window:window:1.0.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\a553aa9fa572fd7fb247f21670544430\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
 49        <uses-library
-49-->[androidx.window:window:1.0.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\841777df7dbcfaf21f69c79943dfa2d5\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+49-->[androidx.window:window:1.0.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\a553aa9fa572fd7fb247f21670544430\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
 50            android:name="androidx.window.sidecar"
-50-->[androidx.window:window:1.0.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\841777df7dbcfaf21f69c79943dfa2d5\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+50-->[androidx.window:window:1.0.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\a553aa9fa572fd7fb247f21670544430\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
 51            android:required="false" />
-51-->[androidx.window:window:1.0.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\841777df7dbcfaf21f69c79943dfa2d5\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+51-->[androidx.window:window:1.0.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\a553aa9fa572fd7fb247f21670544430\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 52
 53        <service
-53-->[androidx.room:room-runtime:2.5.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\1ac396d89fb8a1bc9dc1568ac7424957\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
+53-->[androidx.room:room-runtime:2.5.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\79b90c65f1ab0cb2a924419bf7761677\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
 54            android:name="androidx.room.MultiInstanceInvalidationService"
-54-->[androidx.room:room-runtime:2.5.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\1ac396d89fb8a1bc9dc1568ac7424957\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
+54-->[androidx.room:room-runtime:2.5.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\79b90c65f1ab0cb2a924419bf7761677\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
 55            android:directBootAware="true"
-55-->[androidx.room:room-runtime:2.5.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\1ac396d89fb8a1bc9dc1568ac7424957\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
+55-->[androidx.room:room-runtime:2.5.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\79b90c65f1ab0cb2a924419bf7761677\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
 56            android:exported="false" />
-56-->[androidx.room:room-runtime:2.5.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\1ac396d89fb8a1bc9dc1568ac7424957\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
+56-->[androidx.room:room-runtime:2.5.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\79b90c65f1ab0cb2a924419bf7761677\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
 57
 58        <provider
-58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\7fea7354df5b23df6ffa9fd10e8583f8\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\218cd881603989642927387254991afe\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 59            android:name="androidx.startup.InitializationProvider"
-59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\7fea7354df5b23df6ffa9fd10e8583f8\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\218cd881603989642927387254991afe\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
 60            android:authorities="com.example.illa_movies.androidx-startup"
-60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\7fea7354df5b23df6ffa9fd10e8583f8\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\218cd881603989642927387254991afe\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
 61            android:exported="false" >
-61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\7fea7354df5b23df6ffa9fd10e8583f8\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\218cd881603989642927387254991afe\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 62            <meta-data
-62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\7fea7354df5b23df6ffa9fd10e8583f8\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\218cd881603989642927387254991afe\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
 63                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\7fea7354df5b23df6ffa9fd10e8583f8\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\218cd881603989642927387254991afe\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 64                android:value="androidx.startup" />
-64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\7fea7354df5b23df6ffa9fd10e8583f8\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\218cd881603989642927387254991afe\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 65            <meta-data
-65-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\29687fe4a94756b3454742d05fbfd6bd\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+65-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\d48dec1a068dc833a6af55c47c6039fb\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
 66                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-66-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\29687fe4a94756b3454742d05fbfd6bd\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+66-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\d48dec1a068dc833a6af55c47c6039fb\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
 67                android:value="androidx.startup" />
-67-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\29687fe4a94756b3454742d05fbfd6bd\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+67-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\d48dec1a068dc833a6af55c47c6039fb\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
 68            <meta-data
-68-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:30:13-32:52
+68-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:30:13-32:52
 69                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-69-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:31:17-85
+69-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:31:17-85
 70                android:value="androidx.startup" />
-70-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:32:17-49
+70-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:32:17-49
 71        </provider>
 72
 73        <receiver
-73-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:35:9-47:20
+73-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:35:9-47:20
 74            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-74-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:36:13-76
+74-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:36:13-76
 75            android:directBootAware="false"
-75-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:37:13-44
+75-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:37:13-44
 76            android:enabled="true"
-76-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:38:13-35
+76-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:38:13-35
 77            android:exported="true"
-77-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:39:13-36
+77-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:39:13-36
 78            android:permission="android.permission.DUMP" >
-78-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:40:13-57
+78-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:40:13-57
 79            <intent-filter>
-79-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:41:13-43:29
+79-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:41:13-43:29
 80                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-80-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:17-91
-80-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:25-88
+80-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:17-91
+80-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:42:25-88
 81            </intent-filter>
 82            <intent-filter>
-82-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:44:13-46:29
+82-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:44:13-46:29
 83                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-83-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:17-85
-83-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\cf180123a877e1560dfcbccad53ae0c9\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:25-82
+83-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:17-85
+83-->[androidx.profileinstaller:profileinstaller:1.2.0] C:\Users\ahmad\Projects\ILLA_task\repos\IMBd\.gradle\caches\transforms-3\f4d30b89bc6c2e0663f859370dc601ad\transformed\profileinstaller-1.2.0\AndroidManifest.xml:45:25-82
 84            </intent-filter>
 85        </receiver>
 86    </application>

@@ -7,6 +7,7 @@ import dagger.hilt.components.SingletonComponent
 @InstallIn(SingletonComponent::class)
 @Module(includes = [
     NetworkModule::class,
+    RepositoriesBindingModule::class,
 ])
 object AppModule {
 }

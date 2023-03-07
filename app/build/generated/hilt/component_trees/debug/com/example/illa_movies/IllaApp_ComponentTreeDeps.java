@@ -19,6 +19,13 @@ import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_andro
 import dagger.hilt.processor.internal.definecomponent.codegen._dagger_hilt_components_SingletonComponent;
 import hilt_aggregated_deps._com_example_illa_movies_IllaApp_GeneratedInjector;
 import hilt_aggregated_deps._com_example_illa_movies_MainActivity_GeneratedInjector;
+import hilt_aggregated_deps._com_example_illa_movies_core_di_AppModule;
+import hilt_aggregated_deps._com_example_illa_movies_core_di_NetworkModule;
+import hilt_aggregated_deps._com_example_illa_movies_core_di_RepositoriesBindingModule;
+import hilt_aggregated_deps._com_example_illa_movies_ui_favorites_FavoritesFragment_GeneratedInjector;
+import hilt_aggregated_deps._com_example_illa_movies_ui_home_HomeFragment_GeneratedInjector;
+import hilt_aggregated_deps._com_example_illa_movies_ui_home_HomeViewModel_HiltModules_BindsModule;
+import hilt_aggregated_deps._com_example_illa_movies_ui_home_HomeViewModel_HiltModules_KeyModule;
 import hilt_aggregated_deps._dagger_hilt_android_flags_FragmentGetContextFix_FragmentGetContextFixEntryPoint;
 import hilt_aggregated_deps._dagger_hilt_android_flags_HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule;
 import hilt_aggregated_deps._dagger_hilt_android_internal_lifecycle_DefaultViewModelFactories_ActivityEntryPoint;
@@ -60,6 +67,13 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
     aggregatedDeps = {
         _com_example_illa_movies_IllaApp_GeneratedInjector.class,
         _com_example_illa_movies_MainActivity_GeneratedInjector.class,
+        _com_example_illa_movies_core_di_AppModule.class,
+        _com_example_illa_movies_core_di_NetworkModule.class,
+        _com_example_illa_movies_core_di_RepositoriesBindingModule.class,
+        _com_example_illa_movies_ui_favorites_FavoritesFragment_GeneratedInjector.class,
+        _com_example_illa_movies_ui_home_HomeFragment_GeneratedInjector.class,
+        _com_example_illa_movies_ui_home_HomeViewModel_HiltModules_BindsModule.class,
+        _com_example_illa_movies_ui_home_HomeViewModel_HiltModules_KeyModule.class,
         _dagger_hilt_android_flags_FragmentGetContextFix_FragmentGetContextFixEntryPoint.class,
         _dagger_hilt_android_flags_HiltWrapper_FragmentGetContextFix_FragmentGetContextFixModule.class,
         _dagger_hilt_android_internal_lifecycle_DefaultViewModelFactories_ActivityEntryPoint.class,

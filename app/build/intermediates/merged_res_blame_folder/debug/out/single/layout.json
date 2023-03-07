@@ -1,6 +1,14 @@
 [
     {
-        "merged": "com.example.illa_movies.app-mergeDebugResources-77:/layout/main_activity.xml",
-        "source": "com.example.illa_movies.app-main-80:/layout/main_activity.xml"
+        "merged": "com.example.illa_movies.app-mergeDebugResources-80:/layout/activity_main.xml",
+        "source": "com.example.illa_movies.app-main-83:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ahmad\\Projects\\ILLA_task\\repos\\IMBd\\.gradle\\daemon\\7.5\\com.example.illa_movies.app-mergeDebugResources-80:\\layout\\main_activity.xml",
+        "source": "C:\\Users\\ahmad\\Projects\\ILLA_task\\repos\\IMBd\\.gradle\\daemon\\7.5\\com.example.illa_movies.app-main-83:\\layout\\main_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\ahmad\\Projects\\ILLA_task\\repos\\IMBd\\.gradle\\daemon\\7.5\\com.example.illa_movies.app-mergeDebugResources-80:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ahmad\\Projects\\ILLA_task\\repos\\IMBd\\.gradle\\daemon\\7.5\\com.example.illa_movies.app-main-83:\\layout\\activity_main.xml"
     }
 ]

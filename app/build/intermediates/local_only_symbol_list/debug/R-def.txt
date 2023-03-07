@@ -14,12 +14,14 @@ drawable ic_home_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_notifications_black_24dp
+drawable placeholder
+id container
 id nav_graph
-id nav_host_fragment
+id nav_host_fragment_activity_main
 id nav_view
 id navigation_favorites
 id navigation_home
-layout main_activity
+layout activity_main
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
