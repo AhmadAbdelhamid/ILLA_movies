@@ -56,10 +56,6 @@
         "source": "C:\\Users\\ahmad\\Projects\\ILLA_task\\repos\\IMBd\\.gradle\\daemon\\7.5\\com.example.illa_movies.app-main-83:\\mipmap-anydpi-v33\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.illa_movies.app-merged_res-81:/drawable_placeholder.webp.flat",
-        "source": "com.example.illa_movies.app-main-83:/drawable/placeholder.webp"
-    },
-    {
         "merged": "C:\\Users\\ahmad\\Projects\\ILLA_task\\repos\\IMBd\\.gradle\\daemon\\7.5\\com.example.illa_movies.app-merged_res-81:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\ahmad\\Projects\\ILLA_task\\repos\\IMBd\\.gradle\\daemon\\7.5\\com.example.illa_movies.app-main-83:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
@@ -90,5 +86,9 @@
     {
         "merged": "C:\\Users\\ahmad\\Projects\\ILLA_task\\repos\\IMBd\\.gradle\\daemon\\7.5\\com.example.illa_movies.app-merged_res-81:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ahmad\\Projects\\ILLA_task\\repos\\IMBd\\.gradle\\daemon\\7.5\\com.example.illa_movies.app-main-83:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ahmad\\Projects\\ILLA_task\\repos\\IMBd\\.gradle\\daemon\\7.5\\com.example.illa_movies.app-merged_res-81:\\drawable_placeholder.webp.flat",
+        "source": "C:\\Users\\ahmad\\Projects\\ILLA_task\\repos\\IMBd\\.gradle\\daemon\\7.5\\com.example.illa_movies.app-main-83:\\drawable\\placeholder.webp"
     }
 ]

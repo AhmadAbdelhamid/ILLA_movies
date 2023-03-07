@@ -3166,9 +3166,7 @@ int id mtrl_view_tag_bottom_padding 0x7f080131
 int id multiply 0x7f080132
 int id nav_controller_view_tag 0x7f080133
 int id nav_graph 0x7f080134
-int id nav_host_fragment_activity_main 0x7f080135
 int id nav_host_fragment_container 0x7f080136
-int id nav_view 0x7f080137
 int id navigation_bar_item_active_indicator_view 0x7f080138
 int id navigation_bar_item_icon_container 0x7f080139
 int id navigation_bar_item_icon_view 0x7f08013a
@@ -3478,7 +3476,6 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
-int layout activity_main 0x7f0b001c
 int layout custom_dialog 0x7f0b001d
 int layout design_bottom_navigation_item 0x7f0b001e
 int layout design_bottom_sheet_dialog 0x7f0b001f

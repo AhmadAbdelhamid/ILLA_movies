@@ -7,14 +7,18 @@ import android.view.View;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.SavedStateHandle;
 import androidx.lifecycle.ViewModel;
+import com.example.illa_movies.core.data_source.local.FavoriteMoviesDao;
+import com.example.illa_movies.core.data_source.local.OmdbDatabase;
 import com.example.illa_movies.core.data_source.remote.OmdbService;
 import com.example.illa_movies.core.di.AppModule;
+import com.example.illa_movies.core.di.AppModule_ProvideDatabaseFactory;
+import com.example.illa_movies.core.di.AppModule_ProvideMovieDetailDaoFactory;
 import com.example.illa_movies.core.di.NetworkModule;
 import com.example.illa_movies.core.di.NetworkModule_ProvideMovieServiceFactory;
 import com.example.illa_movies.core.di.NetworkModule_ProvideRetrofitFactory;
 import com.example.illa_movies.core.domain.repository.OmdbRepoImpl;
-import com.example.illa_movies.ui.favorites.FavoritesFragment;
-import com.example.illa_movies.ui.home.HomeFragment;
+import com.example.illa_movies.ui.favorites.FavoritesViewModel;
+import com.example.illa_movies.ui.favorites.FavoritesViewModel_HiltModules_KeyModule_ProvideFactory;
 import com.example.illa_movies.ui.home.HomeViewModel;
 import com.example.illa_movies.ui.home.HomeViewModel_HiltModules_KeyModule_ProvideFactory;
 import dagger.hilt.android.ActivityRetainedLifecycle;
@@ -31,9 +35,12 @@ import dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories;
 import dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories_InternalFactoryFactory_Factory;
 import dagger.hilt.android.internal.managers.ActivityRetainedComponentManager_LifecycleModule_ProvideActivityRetainedLifecycleFactory;
 import dagger.hilt.android.internal.modules.ApplicationContextModule;
+import dagger.hilt.android.internal.modules.ApplicationContextModule_ProvideContextFactory;
 import dagger.internal.DaggerGenerated;
 import dagger.internal.DoubleCheck;
+import dagger.internal.MapBuilder;
 import dagger.internal.Preconditions;
+import dagger.internal.SetBuilder;
 import java.util.Collections;
 import java.util.Map;
 import java.util.Set;
@@ -53,11 +60,9 @@ public final class DaggerIllaApp_HiltComponents_SingletonC {
     return new Builder();
   }
 
-  public static IllaApp_HiltComponents.SingletonC create() {
-    return new Builder().build();
-  }
-
   public static final class Builder {
+    private ApplicationContextModule applicationContextModule;
+
     private Builder() {
     }
 
@@ -79,12 +84,8 @@ public final class DaggerIllaApp_HiltComponents_SingletonC {
       return this;
     }
 
-    /**
-     * @deprecated This module is declared, but an instance is not used in the component. This method is a no-op. For more, see https://dagger.dev/unused-modules.
-     */
-    @Deprecated
     public Builder applicationContextModule(ApplicationContextModule applicationContextModule) {
-      Preconditions.checkNotNull(applicationContextModule);
+      this.applicationContextModule = Preconditions.checkNotNull(applicationContextModule);
       return this;
     }
 
@@ -99,7 +100,8 @@ public final class DaggerIllaApp_HiltComponents_SingletonC {
     }
 
     public IllaApp_HiltComponents.SingletonC build() {
-      return new SingletonCImpl();
+      Preconditions.checkBuilderRequirement(applicationContextModule, ApplicationContextModule.class);
+      return new SingletonCImpl(applicationContextModule);
     }
   }
 
@@ -333,14 +335,6 @@ public final class DaggerIllaApp_HiltComponents_SingletonC {
     }
 
     @Override
-    public void injectFavoritesFragment(FavoritesFragment favoritesFragment) {
-    }
-
-    @Override
-    public void injectHomeFragment(HomeFragment homeFragment) {
-    }
-
-    @Override
     public DefaultViewModelFactories.InternalFactoryFactory getHiltInternalFactoryFactory() {
       return activityCImpl.getHiltInternalFactoryFactory();
     }
@@ -396,7 +390,7 @@ public final class DaggerIllaApp_HiltComponents_SingletonC {
 
     @Override
     public Set<String> getViewModelKeys() {
-      return Collections.<String>singleton(HomeViewModel_HiltModules_KeyModule_ProvideFactory.provide());
+      return SetBuilder.<String>newSetBuilder(2).add(FavoritesViewModel_HiltModules_KeyModule_ProvideFactory.provide()).add(HomeViewModel_HiltModules_KeyModule_ProvideFactory.provide()).build();
     }
 
     @Override
@@ -422,6 +416,8 @@ public final class DaggerIllaApp_HiltComponents_SingletonC {
 
     private final ViewModelCImpl viewModelCImpl = this;
 
+    private Provider<FavoritesViewModel> favoritesViewModelProvider;
+
     private Provider<HomeViewModel> homeViewModelProvider;
 
     private ViewModelCImpl(SingletonCImpl singletonCImpl,
@@ -437,12 +433,13 @@ public final class DaggerIllaApp_HiltComponents_SingletonC {
     @SuppressWarnings("unchecked")
     private void initialize(final SavedStateHandle savedStateHandleParam,
         final ViewModelLifecycle viewModelLifecycleParam) {
-      this.homeViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 0);
+      this.favoritesViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 0);
+      this.homeViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
     }
 
     @Override
     public Map<String, Provider<ViewModel>> getHiltViewModelMap() {
-      return Collections.<String, Provider<ViewModel>>singletonMap("com.example.illa_movies.ui.home.HomeViewModel", ((Provider) homeViewModelProvider));
+      return MapBuilder.<String, Provider<ViewModel>>newMapBuilder(2).put("com.example.illa_movies.ui.favorites.FavoritesViewModel", ((Provider) favoritesViewModelProvider)).put("com.example.illa_movies.ui.home.HomeViewModel", ((Provider) homeViewModelProvider)).build();
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -466,7 +463,10 @@ public final class DaggerIllaApp_HiltComponents_SingletonC {
       @Override
       public T get() {
         switch (id) {
-          case 0: // com.example.illa_movies.ui.home.HomeViewModel 
+          case 0: // com.example.illa_movies.ui.favorites.FavoritesViewModel 
+          return (T) new FavoritesViewModel(singletonCImpl.omdbRepoImplProvider.get());
+
+          case 1: // com.example.illa_movies.ui.home.HomeViewModel 
           return (T) new HomeViewModel(singletonCImpl.omdbRepoImplProvider.get());
 
           default: throw new AssertionError(id);
@@ -544,24 +544,32 @@ public final class DaggerIllaApp_HiltComponents_SingletonC {
   }
 
   private static final class SingletonCImpl extends IllaApp_HiltComponents.SingletonC {
+    private final ApplicationContextModule applicationContextModule;
+
     private final SingletonCImpl singletonCImpl = this;
 
     private Provider<Retrofit> provideRetrofitProvider;
 
     private Provider<OmdbService> provideMovieServiceProvider;
 
+    private Provider<OmdbDatabase> provideDatabaseProvider;
+
+    private Provider<FavoriteMoviesDao> provideMovieDetailDaoProvider;
+
     private Provider<OmdbRepoImpl> omdbRepoImplProvider;
 
-    private SingletonCImpl() {
-
-      initialize();
+    private SingletonCImpl(ApplicationContextModule applicationContextModuleParam) {
+      this.applicationContextModule = applicationContextModuleParam;
+      initialize(applicationContextModuleParam);
 
     }
 
     @SuppressWarnings("unchecked")
-    private void initialize() {
+    private void initialize(final ApplicationContextModule applicationContextModuleParam) {
       this.provideRetrofitProvider = DoubleCheck.provider(new SwitchingProvider<Retrofit>(singletonCImpl, 2));
       this.provideMovieServiceProvider = DoubleCheck.provider(new SwitchingProvider<OmdbService>(singletonCImpl, 1));
+      this.provideDatabaseProvider = DoubleCheck.provider(new SwitchingProvider<OmdbDatabase>(singletonCImpl, 4));
+      this.provideMovieDetailDaoProvider = DoubleCheck.provider(new SwitchingProvider<FavoriteMoviesDao>(singletonCImpl, 3));
       this.omdbRepoImplProvider = DoubleCheck.provider(new SwitchingProvider<OmdbRepoImpl>(singletonCImpl, 0));
     }
 
@@ -599,13 +607,19 @@ public final class DaggerIllaApp_HiltComponents_SingletonC {
       public T get() {
         switch (id) {
           case 0: // com.example.illa_movies.core.domain.repository.OmdbRepoImpl 
-          return (T) new OmdbRepoImpl(singletonCImpl.provideMovieServiceProvider.get());
+          return (T) new OmdbRepoImpl(singletonCImpl.provideMovieServiceProvider.get(), singletonCImpl.provideMovieDetailDaoProvider.get());
 
           case 1: // com.example.illa_movies.core.data_source.remote.OmdbService 
           return (T) NetworkModule_ProvideMovieServiceFactory.provideMovieService(singletonCImpl.provideRetrofitProvider.get());
 
           case 2: // retrofit2.Retrofit 
           return (T) NetworkModule_ProvideRetrofitFactory.provideRetrofit();
+
+          case 3: // com.example.illa_movies.core.data_source.local.FavoriteMoviesDao 
+          return (T) AppModule_ProvideMovieDetailDaoFactory.provideMovieDetailDao(singletonCImpl.provideDatabaseProvider.get());
+
+          case 4: // com.example.illa_movies.core.data_source.local.OmdbDatabase 
+          return (T) AppModule_ProvideDatabaseFactory.provideDatabase(ApplicationContextModule_ProvideContextFactory.provideContext(singletonCImpl.applicationContextModule));
 
           default: throw new AssertionError(id);
         }

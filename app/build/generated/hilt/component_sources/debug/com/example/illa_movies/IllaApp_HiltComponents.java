@@ -3,8 +3,7 @@ package com.example.illa_movies;
 import com.example.illa_movies.core.di.AppModule;
 import com.example.illa_movies.core.di.NetworkModule;
 import com.example.illa_movies.core.di.RepositoriesBindingModule;
-import com.example.illa_movies.ui.favorites.FavoritesFragment_GeneratedInjector;
-import com.example.illa_movies.ui.home.HomeFragment_GeneratedInjector;
+import com.example.illa_movies.ui.favorites.FavoritesViewModel_HiltModules;
 import com.example.illa_movies.ui.home.HomeViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
@@ -149,6 +148,7 @@ public final class IllaApp_HiltComponents {
 
   @Subcomponent(
       modules = {
+          FavoritesViewModel_HiltModules.KeyModule.class,
           HiltWrapper_ActivityRetainedComponentManager_LifecycleModule.class,
           HomeViewModel_HiltModules.KeyModule.class,
           ActivityCBuilderModule.class,
@@ -188,6 +188,7 @@ public final class IllaApp_HiltComponents {
 
   @Subcomponent(
       modules = {
+          FavoritesViewModel_HiltModules.BindsModule.class,
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
           HomeViewModel_HiltModules.BindsModule.class
       }
@@ -214,9 +215,7 @@ public final class IllaApp_HiltComponents {
       modules = ViewWithFragmentCBuilderModule.class
   )
   @FragmentScoped
-  public abstract static class FragmentC implements FavoritesFragment_GeneratedInjector,
-      HomeFragment_GeneratedInjector,
-      FragmentComponent,
+  public abstract static class FragmentC implements FragmentComponent,
       DefaultViewModelFactories.FragmentEntryPoint,
       ViewComponentManager.ViewWithFragmentComponentBuilderEntryPoint,
       GeneratedComponent {

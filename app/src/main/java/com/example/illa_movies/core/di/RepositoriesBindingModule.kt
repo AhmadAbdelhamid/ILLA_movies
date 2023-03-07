@@ -10,6 +10,12 @@ import dagger.hilt.components.SingletonComponent
 @Module
 @InstallIn(SingletonComponent::class)
 abstract class RepositoriesBindingModule {
+
+    /**
+     * Binds an [OmdbRepoImpl] instance to the [OmdbRepo] interface.
+     * @param omdbRepoImpl An instance of [OmdbRepoImpl].
+     * @return An instance of [OmdbRepo].
+     */
     @Binds
     abstract fun bindOmdbRepo(omdbRepoImpl: OmdbRepoImpl): OmdbRepo
 }
