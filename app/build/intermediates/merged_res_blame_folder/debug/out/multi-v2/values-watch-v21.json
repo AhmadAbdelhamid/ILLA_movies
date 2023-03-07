@@ -4,7 +4,7 @@
             "outputFile": "com.example.illa_movies.app-mergeDebugResources-79:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ahmad\\Projects\\ILLA_task\\repos\\IMBd\\.gradle\\caches\\transforms-3\\d41b2cac30b9ec997fc674eff8635747\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\ahmad\\.gradle\\caches\\transforms-3\\d41b2cac30b9ec997fc674eff8635747\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",

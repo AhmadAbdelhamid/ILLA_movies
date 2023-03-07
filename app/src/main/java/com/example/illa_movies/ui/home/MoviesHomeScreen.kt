@@ -25,15 +25,23 @@ import androidx.paging.compose.items
 import com.example.illa_movies.ui.common_ui_component.MovieItem
 import com.example.illa_movies.ui.common_ui_component.SearchInput
 
+/**
+ * Composable function for displaying the Movies Home Screen UI.
+ * @param modifier Modifier for adjusting the layout of the screen.
+ * @param viewModel ViewModel that provides data for the screen.
+ */
+
 @OptIn(ExperimentalMaterialApi::class, ExperimentalFoundationApi::class)
 @Composable
 fun MoviesHomeScreen(
     modifier: Modifier = Modifier,
     viewModel: HomeViewModel = hiltViewModel(),
 ) {
-
+    // Collect movies using lazy paging
     val lazyPagingMovies = viewModel.moviesFlow.collectAsLazyPagingItems()
 
+    // Determine if loading should be displayed while movies are not empty & paging state in loading too,
+    // to avoid showing two loading indicators
     val isLoadingWhileMoviesNotEmpty by remember(lazyPagingMovies.loadState.refresh) {
         derivedStateOf {
             val isLoading = lazyPagingMovies.loadState.refresh == LoadState.Loading
@@ -41,13 +49,14 @@ fun MoviesHomeScreen(
         }
     }
 
-    val pullRefreshState =
-        rememberPullRefreshState(
-            isLoadingWhileMoviesNotEmpty,
-            onRefresh = {
-                lazyPagingMovies.refresh()
-            })
+    // Create pull-to-refresh state for the screen
+    val pullRefreshState = rememberPullRefreshState(
+        isLoadingWhileMoviesNotEmpty,
+        onRefresh = {
+            lazyPagingMovies.refresh()
+        })
 
+    // Display the screen content inside a Box with pull-to-refresh functionality
     Box(modifier.pullRefresh(pullRefreshState)) {
         LazyColumn(
             modifier = Modifier
@@ -57,16 +66,20 @@ fun MoviesHomeScreen(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
+            // Display a search input at the top of the screen
             stickyHeader {
                 SearchInput { query -> viewModel.getMovies(query) }
             }
 
+            // Display a list of movies
             items(
                 items = lazyPagingMovies,
                 key = { it.imdbId }
             ) { movie ->
-                if (movie == null) return@items
 
+                if (movie == null) return@items // don't show any thing if movie is null
+
+                // Display a single movie item
                 MovieItem(
                     movie = movie,
                     onClick = {
@@ -76,7 +89,7 @@ fun MoviesHomeScreen(
                 )
             }
 
-            //FIRST LOAD
+            // Render the loading UI when the screen is first loaded
             when (val state = lazyPagingMovies.loadState.refresh) {
                 is LoadState.Error -> {
                     item {
@@ -94,7 +107,7 @@ fun MoviesHomeScreen(
                 else -> {}
             }
 
-            // Pagination
+            // Render the loading UI when pagination is occurring
             when (val state = lazyPagingMovies.loadState.append) {
                 is LoadState.Error -> {
                     item {
@@ -111,8 +124,9 @@ fun MoviesHomeScreen(
                 }
                 else -> {}
             }
-
         }
+
+        // Render the pull-to-refresh indicator
         PullRefreshIndicator(
             lazyPagingMovies.loadState.refresh == LoadState.Loading,
             pullRefreshState,
@@ -122,6 +136,11 @@ fun MoviesHomeScreen(
     }
 }
 
+/**
+ * A Composable function that renders a loading UI with a message.
+ * @param message The message to display alongside the loading UI.
+ * @return A Composable that renders a loading UI.
+ */
 @Composable
 fun Loading(message: String) {
     Column(
