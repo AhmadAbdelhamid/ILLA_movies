@@ -32,7 +32,9 @@ fun FavoriteMoviesScreen(
                 modifier = Modifier.align(Alignment.Center),
             )
         else {
-            FavoriteMoviesComponent(movies)
+            FavoriteMoviesComponent(movies) { movie ->
+                viewModel.onFavIconClicked(movie)
+            }
         }
     }
 }
@@ -46,7 +48,10 @@ fun EmptyText(modifier: Modifier = Modifier) {
 }
 
 @Composable
-private fun FavoriteMoviesComponent(movies: List<OmdbMovie>) {
+private fun FavoriteMoviesComponent(
+    movies: List<OmdbMovie>,
+    onFavClick: (OmdbMovie) -> Unit,
+) {
     LazyColumn(
         modifier = Modifier
             .background(MaterialTheme.colors.background)
@@ -65,7 +70,9 @@ private fun FavoriteMoviesComponent(movies: List<OmdbMovie>) {
         ) { movie ->
             MovieItem(
                 movie = movie,
-                onClick = {},
+                onClick = {
+                    onFavClick(movie)
+                },
             )
         }
     }
